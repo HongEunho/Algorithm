@@ -1,0 +1,6 @@
+﻿  Baek8958.cpp
+c:\users\은호\documents\visual studio 2017\projects\1dimensionarray\1dimensionarray\baek8958.cpp(8): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 'scanf' 선언을 참조하십시오.
+c:\users\은호\documents\visual studio 2017\projects\1dimensionarray\1dimensionarray\baek8958.cpp(14): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 'scanf' 선언을 참조하십시오.
+  1dimensionArray.vcxproj -> C:\Users\은호\Documents\Visual Studio 2017\Projects\1dimensionArray\Debug\1dimensionArray.exe
