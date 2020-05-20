@@ -8,7 +8,7 @@ int main()
 	float score[1000] = { 0 };
 
 
-	for (int i = 0; i < N; i++) //�ִ밪 ���ϰ�
+	for (int i = 0; i < N; i++) //ÃÖ´ë°ª ±¸ÇÏ°í
 	{
 		scanf("%f", &score[i]);
 		if (score[i] > max)
