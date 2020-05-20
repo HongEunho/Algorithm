@@ -7,8 +7,8 @@ int main()
 	int pos[26];
 	memset(pos, -1, sizeof(int) * 26);
 	scanf("%s", str);
-	for (int i = 0; i < 26; i++) //¾ËÆÄºª
-		for (int j = 0; j < strlen(str); j++) //¹®ÀÚ¿­
+	for (int i = 0; i < 26; i++) //Â¾Ã‹Ã†Ã„ÂºÂª
+		for (int j = 0; j < strlen(str); j++) //Â¹Â®Ã€ÃšÂ¿Â­
 			if (str[j] == 'a' + i)
 			{
 				pos[i] = j;
