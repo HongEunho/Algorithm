@@ -1,4 +1,8 @@
 #include <stdio.h>
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
 
 int main()
 {
@@ -8,7 +12,7 @@ int main()
 	for(int i=0;i<x;i++)
 		scanf("%s", chess[i]);
 	
-	int tmp = 10000, min = 10000;
+	int tmp = 10000;
 
 	//기준점 이동
 	for (int i = 0; i + 8 <= x; i++)
@@ -46,13 +50,12 @@ int main()
 					}
 				}
 			}
-			if (tmp > cnt)
-			{
-				tmp = cnt;
-			}
+			tmp = min(tmp, cnt);
+			tmp = min(tmp, 64 - cnt);
 		}
 	}
-
+	
+	
 	printf("%d", tmp);
 	return 0;
 }
