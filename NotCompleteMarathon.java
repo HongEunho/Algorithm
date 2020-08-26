@@ -1,22 +1,20 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.HashMap;
 
 class Solution {
     public String solution(String[] participant, String[] completion) {
         String answer = "";
-        HashMap<String,Integer> map = new HashMap<String, Integer>();
-        for(String part : participant)
-        	map.put(part, map.getOrDefault(part, 0)+1);
+        Arrays.sort(participant);
+        Arrays.sort(completion);
         
-        for(String comp : completion)
-        	map.put(comp, map.get(comp)-1);
-        
-        for(String key : map.keySet())
+        for(int i=0; i<completion.length; i++)
         {
-        	if(map.get(key) != 0)
-        		answer = key;
+        	if(!participant[i].equals(completion[i]))
+        		return participant[i];
         }
         
-        return answer;
+        return participant[participant.length-1];
     }
 }
 
